@@ -1,0 +1,22 @@
+#tcocalendar{
+    .fc-header-toolbar{
+        .fc-toolbar-chunk{
+            button{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .fc-view-harness{
+        .fc-view{
+            .fc-scrollgrid{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
