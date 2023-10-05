@@ -1,4 +1,4 @@
-# TCO Google Calendar Plugin
+# WP Google Calendar Plugin
 
 Google Calendar Integration is a powerful WordPress plugin that simplifies the process of connecting your website to Google Calendar. With this plugin, you can effortlessly store your Google Calendar ID and API Key directly from your WordPress dashboard. Whether you're managing events, appointments, or schedules, this plugin provides a seamless solution for integrating Google Calendar data into your website.
 

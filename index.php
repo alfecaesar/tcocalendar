@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: TCO Calendar
-Description: The Church Online Calendar Plugin
+Plugin Name: WP Google Calendar
+Description: Calendar Plugin connected to Google Calendar API
 Version: 1.0.0
 Author: Alfe Caesar Lagas
 */
@@ -12,6 +12,8 @@ function enqueue_scripts() {
     $time_zone = get_option('time_zone');
 
     wp_enqueue_style('fullcalendar-css', 'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css');
+    wp_enqueue_style('bootstrap-min', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
     wp_enqueue_style('calendar-style', plugins_url( '/styles/style.css', __FILE__ ));
     wp_enqueue_script('google-api', 'https://apis.google.com/js/api.js', [], null, true);
     wp_enqueue_script('moment-js', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js', [], null, true);
@@ -30,7 +32,7 @@ add_action('wp_enqueue_scripts', 'enqueue_scripts');
 function calendar_shortcode() {
     $google_calendar_id = get_option('google_calendar_id');
     $google_api_key = get_option('google_api_key');
-    $output  = '<div id="tcocalendar"></div>';
+    $output  = '<div id="wpcalendar"></div>';
 
     return $output;
 }

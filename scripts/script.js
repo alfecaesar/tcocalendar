@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('tcocalendar');
+    var calendarEl = document.getElementById('wpcalendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         timeZone: scriptParams.time_zone,
